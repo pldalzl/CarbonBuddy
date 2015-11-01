@@ -29,7 +29,12 @@ angular.module('starter.services', [])
     name: 'Mike Harrington',
     lastText: 'This is wicked good ice cream.',
     face: 'https://pbs.twimg.com/profile_images/578237281384841216/R3ae1n61.png'
-  }];
+  }]
+
+    chats.sort(function(chat1,chat2){
+      return chat1.name-chat2.name;
+    });
+
 
   return {
     all: function() {

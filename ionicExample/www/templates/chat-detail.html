@@ -6,9 +6,25 @@
 -->
 <ion-view view-title="{{chat.name}}">
   <ion-content class="padding">
-    <img ng-src="{{chat.face}}" style="width: 64px; height: 64px">
-    <p>
-      {{chat.lastText}}
-    </p>
+    <div class="list card">
+
+      <div class="item item-avatar">
+        <h2>{{chat.name}}</h2>
+      </div>
+
+      <div class="item item-image">
+        <img ng-src="{{chat.face}}" style="width: 90%; height: 75%">
+      </div>
+
+      <div class="item item-energized">
+        <p>1000 points</p>
+      </div>
+
+      <a class="item item-icon-left assertive" href="#/tab/account">
+        <i class="icon ion-ios-location"></i>
+        Add to Route
+      </a>
+
+    </div>
   </ion-content>
 </ion-view>

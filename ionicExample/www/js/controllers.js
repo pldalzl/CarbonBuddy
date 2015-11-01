@@ -12,6 +12,10 @@ angular.module('starter.controllers', [])
     //});
 
     $scope.chats = Chats.all();
+    $scope.data = {
+      showDelete: false,
+      showReorder: true
+    }
     $scope.remove = function(chat) {
       Chats.remove(chat);
     };
@@ -27,5 +31,6 @@ angular.module('starter.controllers', [])
     enableFriends: true
   };
 });
+
 
 
