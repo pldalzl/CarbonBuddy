@@ -1,4 +1,13 @@
-angular.module('starter.controllers', [])
+angular.module('starter.controllers', ['ionic'])
+
+  .controller('SignInCtrl', function($scope, $state) {
+
+    $scope.signIn = function() {
+      console.log('Sign-In');
+      $state.go('tab.dash');
+    };
+
+  })
 
 .controller('DashCtrl', function($scope) {})
 
@@ -20,6 +29,8 @@ angular.module('starter.controllers', [])
       Chats.remove(chat);
     };
   })
+
+
 
 
   .controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
